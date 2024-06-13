@@ -4,7 +4,7 @@
     "description": "Online Book Library Single Page Application",
     "main": "index.html",
     "scripts": {
-        "test:ui": "npx playwright test tests/ui.test.js",
+        "test:ui": "npx playwright test /ui.test.js",
         "test:ui-debug": "npx playwright test tests/ui.test.js --ui",
         "start": "concurrently \"npm run start-be\" \"npm run start-fe\"",
         "start-fe": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
@@ -23,5 +23,6 @@
         "http-server": "0.12.3",
         "mocha": "8.3.2",
         "playwright-chromium": "1.9.2"
+        
     }
 }
